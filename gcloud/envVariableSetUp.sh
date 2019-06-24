@@ -1,0 +1,2 @@
+export GOOGLE_APPLICATION_CREDENTIALS="/Users/kevinbyun/OneDrive\ -\ Georgia\ Institute\ of\ Technology/audioTranscribe/gcloud/audioTranscribe-bc6e1a890ca6.json"
+export GOOGLE_APPLICATION_CREDENTIALS="/Users/kevinbyun/Downloads/audioTranscribe-08fb2dc18d45.json"

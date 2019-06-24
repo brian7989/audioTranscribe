@@ -1,0 +1,25 @@
+{
+  "name": "audiotranscribe",
+  "version": "1.0.0",
+  "description": "**How to set up AWS audioTranscribe**",
+  "main": "index.js",
+  "dependencies": {
+    "@google-cloud/storage": "^2.1.0",
+    "express": "^4.16.4",
+    "react-native-google-speech": "^3.0.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kbyun03/audioTranscribe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kbyun03/audioTranscribe/issues"
+  },
+  "homepage": "https://github.com/kbyun03/audioTranscribe#readme"
+}
