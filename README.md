@@ -1,7 +1,7 @@
 # audioTranscribe
 HackGT5 submission - Totomi 
 
-Project leader      =   YoungBin Byun\n
+Project leader      =   YoungBin Byun\
 Front End           =   Hee Kim
 Back End            =   Keun Park
 Contributor         =   Woongrae Cho
