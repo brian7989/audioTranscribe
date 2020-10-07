@@ -88,8 +88,8 @@ _AddressPatches.Initialize()
 def MonkeypatchGetaddrinfo(hostname, ip):
   """Change getaddrinfo to allow a "fake /etc/hosts" effect.
 
-  GKE provides an IP address for talking to the k8s master, and a
-  ca_certs that signs the tls certificate the master provides. Unfortunately,
+  GKE provides an IP address for talking to the k8s main, and a
+  ca_certs that signs the tls certificate the main provides. Unfortunately,
   that tls certificate is for `kubernetes`, `kubernetes.default`,
   `kubernetes.default.svc`, or `kubernetes.default.svc.cluster.local`.
 
@@ -117,7 +117,7 @@ def ClusterConnectionInfo(cluster_ref):
     cluster_ref: reference to the cluster to connect to.
   Yields:
     A tuple of (endpoint, ca_certs), where endpoint is the ip address
-    of the GKE master, and ca_certs is the absolute path of a temporary file
+    of the GKE main, and ca_certs is the absolute path of a temporary file
     (lasting the life of the python process) holding the ca_certs to connect to
     the GKE cluster.
   Raises:
@@ -125,7 +125,7 @@ def ClusterConnectionInfo(cluster_ref):
   """
   adapter = api_adapter.NewAPIAdapter('v1')
   cluster = adapter.GetCluster(cluster_ref)
-  auth = cluster.masterAuth
+  auth = cluster.mainAuth
   if auth and auth.clusterCaCertificate:
     ca_data = auth.clusterCaCertificate
   else:
